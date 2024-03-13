@@ -1,0 +1,17 @@
+<div class="mt-4">
+    <form method="GET" action="">
+        <div class="form-group">
+            <label for="search-input">Từ khoá</label>
+            <input type="text" name="q" class="form-control" id="search-input" placeholder="Nhập tk">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+    </form>
+</div>
+{{!-- submit là (đính tất cả name thẻ input vào query parameter vs pt get)
+
+    Khi submit vs phương thức post thì reload lại trang nó vẫn là post
+    Dùng action="/news" trong thẻ form để hiện query ở trang khác
+    vơi pt get value đuoc gửi đi là query parameter và nó đc đính trên url
+    pt post submit dưới dạng form data và bị ẩn trên url
+--}}
