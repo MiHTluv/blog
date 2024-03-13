@@ -27,9 +27,9 @@ app.use(express.json());
 //Template engine để render trang web
 app.engine(
     'hbs',
-    engine({
+engine({
         extname: '.hbs',
-    }),
+}),
 );
 app.set('view engine', 'hbs');
 //Đây là trên window thì \\, còn cái khác thì không biết
